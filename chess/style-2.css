@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, "lucida sans", Arial, Sans-Serif;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    background-color: rgb(242, 240, 240);
+}
+#topbar {
+    height: 200px;
+    background: url(images/bg.jpg);
+    padding: 0 20%;
+    display: grid;
+    grid-template-areas: "topbarleft nav-bar" 
+                        "topbarleft h1-element"
+                        "topbarleft h2-element"
+                        "topbarleft empty";
+}
+#topbarleft {
+    grid-area: topbarleft;
+    width: 300px;
+    height: 200px;
+    background: url(images/logo.jpg);
+}
+#topbarright {
+    grid-area: nav-bar;
+}
+#topbarright ul {
+    display: flex;
+    margin-left: 1rem;
+}
+#topbarright ul li {
+    padding: 15px 20px;
+}
+#topbarright ul li a {
+    color: #000;
+    font-weight: bold;
+}
+#topbarright ul li a:hover {
+    opacity: 70%;
+    text-decoration: underline;
+}
+#topbar h1 {
+    grid-area: h1-element;
+    color: rgba(255, 151, 40, 0.896);
+    font-size: 26px;
+}
+#topbar h2 {
+    grid-area: h2-element;
+    color: white;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+#content {
+    width: 70%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    justify-content: space-between;
+}
+#contentleft h1, #right_sidebar h2 {
+    color: rgb(79, 77, 77);
+    font-weight: light;
+    font-size: 28px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid lightgrey;
+}
+#contentleft p, #right_sidebar p {
+    line-height: 1.5;
+    color: rgb(79, 77, 77);
+}
+#contentleft p.small {
+    color: darkred;
+    font-weight: bold;
+    padding: 0.5rem 0 1rem 0;
+}
+#contentleft p:nth-of-type(3n+2) {
+    padding-right: 3rem;
+}
+#contentleft p a {
+    color: rgba(255, 151, 40, 0.896);
+}
+#contentleft p:nth-of-type(3n) {
+    margin: 1rem 0;
+}
+#contentleft h1:last-of-type {
+    margin-top: 3rem;
+}
+#contentleft blockquote {
+    color: rgb(124, 193, 14);
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 2rem 4.25rem;
+}
+#contentleft blockquote a {
+    color: orange;
+    font-weight: bold;
+}
+#right_sidebar > ul > li:not(#right_sidebar > ul > li:first-of-type) {
+    padding: 1rem 0;
+}
+#right_sidebar > ul > li ul li:hover {
+    background-color: rgb(240, 221, 221);
+}
+#right_sidebar > ul > li ul li:hover a {
+    color: rgb(221, 77, 24);
+}
+#right_sidebar > ul > li:not(#right_sidebar > ul > li:first-of-type) h2 {
+    border: none;
+}
+#right_sidebar > ul > li:first-of-type p {
+    padding: 0.5rem 1rem 0 0;
+}
+#right_sidebar > ul > li > ul li, #footer > div ul li {
+    padding: 0.5rem 0;
+    border-top: 1px solid lightgrey;
+}
+#right_sidebar > ul > li > ul li:last-of-type, #footer > div ul li:last-of-type {
+    border-bottom: 1px solid lightgrey;
+}
+#right_sidebar > ul > li > ul li a {
+    color: darkred;
+}
+#footerbg, #credits {
+    background-color: #050505; 
+}
+#footerbg {
+    border-top: 7px solid rgba(255, 151, 40, 0.896);
+}
+#footer {
+    width: 70%;
+    margin: auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+}
+#footer > div h2 {
+    color: wheat;
+    margin-bottom: 1.5rem;
+}
+#footer > div ul li a, #credits p {
+    color: lightgrey;
+}
+#footer > div:last-child {
+    display: none;
+}
+#credits {
+    padding: 3rem 0 1rem 0;
+}
+#credits p a {
+    color: rgba(255, 151, 40, 0.896);
+}
+#footer > div ul li:hover {
+    background-color: rgb(122, 118, 118);
+}
+#footer > div ul li:hover a {
+    color: white;
+}

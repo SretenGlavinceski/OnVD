@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 14px;
+}
+#container {
+    width: 663px;
+    margin: auto;
+    background: url(containerbackground.gif);
+    display: grid;
+    grid-template-areas: "intro intro" "support links";
+}
+#intro {
+    grid-area: intro;
+    width: 605px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "header header" "preamble summary";
+}
+#pageHeader {
+    grid-area: header;
+    width: 605px;
+    height: 332px;
+    background: url(top.gif);
+}
+#pageHeader h1 {
+    font-size: 18px;
+    padding: 25px 350px;
+}
+#preamble {
+    grid-area: preamble;
+    margin-left: 8px;
+}
+#preamble h3, #supportingText > div > h3 {
+    font-size: 0;
+    width: 389px;
+    height: 46px;
+}
+#preamble h3 {
+    background: url(title1.gif);
+}
+#preamble p, #supportingText p {
+    padding: 10px;
+}
+#quickSummary {
+    width: 198px;
+    grid-area: summary;
+    margin-right: 1px;
+}
+#quickSummary p {
+    background: url(summary.gif) no-repeat;
+    padding: 50px 5px 0 5px;
+}
+#supportingText {
+    grid-area: support;
+    width: 389px;
+    margin-left: 37px;
+}
+#supportingText > #explanation h3 {
+    background: url(title2.gif);
+}
+#supportingText > #participation h3 {
+    background: url(title2.gif);
+}
+#participation ul {
+    margin-left: 2rem;
+}
+#participation ul li {
+    padding: 3px 0;
+}
+#participation ul li a {
+    color: darkred;
+}
+#linkList {
+    margin: -7rem 27px 0 0;
+    grid-area: links;
+    width: 192px;
+}
+#linkList h3 {
+    font-size: 0;
+    width: 192px;
+    height: 46px;
+}
+#linkList #lselect h3 {
+    background: url(designs.gif);
+}
+#linkList #lresources h3 {
+    background: url(resources.gif);
+}
+#linkList ul {
+    padding: 0.5rem;
+    list-style-type: none;
+}
+#linkList ul li {
+    font-size: 14px;
+    padding: 5px 0 5px 20px;
+}
+#linkList #lselect ul li {
+    background: url(paperfolded.gif) no-repeat;
+    background-position: 0 6px;
+}
+#linkList #lresources ul li {
+    background: url(paper.gif) no-repeat;
+    background-position: 0 6px;
+}
+#linkList #lresources ul li a {
+    color: darkred;
+}
+#linkList #lresources ul li a:hover {
+    color: yellow;
+}

@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+#header {
+    height: 157px;
+    background: url(images/img05.png);
+    display: flex;
+    align-items: center;
+}
+#header-nav {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-nav #logo h1 a {
+    font-family: 'Satisfy', cursive;
+    color: rgb(74, 57, 24);
+    font-size: 45px;
+}
+#header-nav #navigation ul {
+    display: flex;
+}
+#header-nav #navigation ul li {
+    padding: 10px 15px;
+}
+#header-nav #navigation ul li a {
+    text-transform: uppercase;
+    color: rgb(120, 92, 37);
+    font-family: 'Oswald', sans-serif ;
+    font-size: 18px;
+}
+#header-nav #navigation ul li:hover a {
+    color: rgb(29, 23, 12);
+}
+#footer-wrapper {
+    color: whitesmoke;
+    padding: 2rem 0;
+}
+#footer-wrapper #footer-content {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#footer-wrapper #footer-content > div {
+    width: 31%;
+}
+#footer-wrapper #footer-content > div > h2 {
+    color: #b5a871;
+    font-family: 'Satisfy', cursive;
+    font-size: 33px;
+    margin-bottom: 2rem;
+}
+#footer-wrapper #footer-content > div > h2 span {
+    color: #5c5539;
+}
+#footer-wrapper #footer-content > div > p, #footer-wrapper #footer-content > div li a{
+    color: #bba79a;
+    font-family:  'Abel', sans-serif;
+}
+#fbox1 ul li {
+    padding: 0.5rem 0;
+    border-bottom: 2px dashed #bba79a;
+}
+#fbox1 ul li a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #000;
+}
+#fbox1 ul li a:hover {
+    text-decoration: none;
+}
+#fbox1 > p:nth-of-type(3) {
+    display: none;
+}
+.button-style {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 20px 40px;
+    background: url(images/img01.png);
+    border-radius: 5px;
+}
+.button-style a {
+    color: #5c5539;
+    font-family:  'Abel', sans-serif;
+    text-transform: uppercase;
+}
+#fbox2 p:first-of-type {
+    width: 100%;
+    height: 150px;
+    background: url(images/img05.jpg) no-repeat;
+    background-size: 100%;
+    margin-bottom: 1rem;
+}
+#fbox2 p {
+    line-height: 1.5;
+}
+#fbox3 > h1 {
+    display: none;
+}
+#fbox3 > ul li:first-of-type {
+    display: none;
+}
+#fbox3 > ul li {
+    line-height: 1.5;
+}
+#fbox3 > ul li:nth-of-type(2) {
+    padding-bottom: 1rem;
+}
+#fbox3 > ul li:not(#fbox3 > ul li:nth-of-type(2)) {
+    padding: 1rem 0;
+}
+#fbox3 > ul li:nth-of-type(3) {
+    border-top: 2px dashed #bba79a;
+    border-bottom: 2px dashed #bba79a;
+}
+#page-wrapper {
+    background-color: #f1f2e9;
+}
+#page {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #bba79a;
+    padding: 2rem 0;
+    font-family: 'Abel', sans-serif;
+}
+#page h2 {
+    color: #222222;
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+    margin-bottom: 1rem;
+}
+#content {
+    order: 2;
+    width: 64%;
+}
+#content > div:first-of-type {
+    display: none;
+}
+#content p {
+    line-height: 1.5;
+}
+#content p a:not(p.button-style a) {
+    color: #222222;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#sidebar {
+    width: 30%;
+}
+#sidebar ul li {
+    border: 2px solid transparent;
+    padding: 20px 0 20px 100px;
+    margin-bottom: 0.5rem;
+}
+#sidebar ul li:hover {
+    border: 2px dashed orange;
+}
+#sidebar ul li:nth-of-type(1) {
+    background: url(images/img02.jpg) no-repeat;
+    background-position: 2% center;
+}
+#sidebar ul li:nth-of-type(2) {
+    background: url(images/img03.jpg) no-repeat;
+    background-position: 2% center;
+}
+#sidebar ul li:nth-of-type(3) {
+    background: url(images/img04.jpg) no-repeat;
+    background-position: 2% center;
+}
+#footer {
+    background: url(images/img01.png);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer p, #footer p a {
+    color: #222222;
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+}
+#footer p a {
+    text-decoration: underline;
+}
+#footer p:first-of-type {
+    display: none;
+}
+#fbox1 {
+    border: 2px solid red;
+}
+#fbox1:nth-child(3) {
+    border: 2px solid blue;
+}

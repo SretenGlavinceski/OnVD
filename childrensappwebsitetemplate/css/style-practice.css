@@ -1,0 +1,241 @@
+@font-face {
+	font-family: 'maiden_orangeregular';
+	src: url('../fonts/maidenorange.eot');
+	src: url('../fonts/maidenorange.eot?#iefix') format('embedded-opentype'),  url('../fonts/maidenorange.woff') format('woff'),  url('../fonts/maidenorange.ttf') format('truetype'),  url('../fonts/maidenorange.svg#maiden_orangeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'holtwood_one_scregular';
+	src: url('../fonts/holtwoodonesc-webfont.eot');
+	src: url('../fonts/holtwoodonesc-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/holtwoodonesc-webfont.woff') format('woff'),  url('../fonts/holtwoodonesc-webfont.ttf') format('truetype'),  url('../fonts/holtwoodonesc-webfont.svg#holtwood_one_scregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: #37250e;
+    text-decoration: none;
+    font-family: "holtwood_one_scregular";
+}
+p {
+    color: #37250e;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: "maiden_orangeregular";
+}
+body {
+    background: url(../images/bg-body.jpg);
+}
+.header {
+    padding-bottom: 5rem;
+    background:  url(../images/figure-mouse.png) no-repeat 23% 99.75%,
+                url(../images/bg-header.jpg) no-repeat 0 0;
+    background-size: 20%, 100% 95%;
+}
+.header > div, .body {
+    width: 940px;
+    margin: auto;
+}
+.header > div ul {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: end;
+    background: url(../images/border-yellow.png) repeat-x 0 100%;
+    margin-bottom: 1rem;
+}
+.header > div ul li {
+    margin-left: 1rem;
+}
+.header > div ul li span {
+    display: inline-block;
+    width: 100px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+}
+.header > div ul li span a {
+    display: inline-block;
+    padding-top: 0.5rem;
+	color:#fecb00;
+}
+.header > div ul li:not(.header div ul li.selected) span a:hover {
+	color:#e16f00;
+}
+.header div ul li.selected {
+    padding: 0 8px;
+    background: url(../images/bg-nav-left.png) no-repeat left top,
+    url(../images/bg-nav-right.png) no-repeat right top;
+}
+.header div ul li.selected > span {
+    background: url(../images/bg-nav-mid.png) repeat-x center;
+}
+.header div > div.first  {
+    display: inline-block;
+    max-width: 420px;
+    vertical-align: top;
+}
+.header div > div.first > a:last-of-type {
+    font-size: 0;
+    display: inline-block;
+    width: 348px;
+    height: 90px;
+    background: url(../images/interface.png) no-repeat 52% 0;
+    position: relative;
+    top: -0.25rem;
+    left: 2rem;
+}
+.header div > div.first > a:last-of-type:hover {
+    opacity: 90%;
+}
+.header div > div:last-of-type {
+    vertical-align: top;
+    display: inline-block;
+    max-width: 482px;
+}
+.header div > div:last-of-type > p {
+    padding: 2rem 3rem;
+    line-height: 1.75;
+}
+.header div > div:last-of-type > img {
+    width: 90%;
+    margin: 0 0 3rem 5%;
+    cursor: pointer;
+}
+.body {
+    margin-bottom: 1rem;
+}
+.home {
+    display: flex;
+    justify-content: space-between;
+}
+.home .sidebar {
+    width: 281px;
+}
+.home .sidebar > div {
+    padding: 1rem 0;
+    background: url(../images/bg-sidebar-top.jpg) no-repeat center top, 
+                url(../images/bg-sidebar-bottom.jpg) no-repeat center bottom;
+}
+.home .sidebar > div > ul {
+    padding: 1rem;
+    background: url(../images/bg-sidebar-mid.png) repeat-y center top;
+}
+.home .sidebar > div > ul li {
+    padding: 0 0 1rem 2.5rem;
+    background: url(../images/icon-cheesse.jpg) no-repeat left top;
+}
+.home .content {
+    width: 643px;
+} 
+.home .sidebar > h3 , .home .content > h3 {
+    width: 250px;
+    height: 60px;
+    background: url(../images/interface.png) no-repeat 1px 64.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "holtwood_one_scregular";
+    color: #37250e;
+    margin-left: 0.75rem;
+}
+.home .content > div {
+    padding: 1rem 0;
+    background: url(../images/bg-content-top.jpg) no-repeat center top, 
+                url(../images/bg-content-bottom.jpg) no-repeat center bottom;
+}
+.home .content > div > div {
+    padding: 0 1rem;
+    background: url(../images/bg-content-mid.png) repeat-y center top;
+}
+.home .content > div > div > ul {
+    display: grid;
+    grid-template: repeat(2, 197px) / repeat(2, 295px);
+    gap: 1rem;
+}
+.home .content > div > div > ul li a:hover {
+    opacity: 90%;
+}
+.footer {
+    height: 171px;
+    background: url(../images/bg-footer.jpg);
+    margin-bottom: 2rem;
+}
+.footer > div {
+    width: 940px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer > div > div {
+    flex: 1;
+    padding: 0 1.5rem;
+    margin-top: 3rem;
+    height: 122px;
+}
+.footer > div > div:first-of-type > a:last-of-type {
+    display: inline-block;
+    font-size: 0;
+    width: 225px;
+    height: 45px;
+    background: url(../images/interface.png) no-repeat 90% 77%;
+}
+.footer > div > div:first-of-type > a:last-of-type:hover {
+    opacity: 0.9;
+}
+.footer > div > div:nth-of-type(2) h4, .footer > div > div:nth-of-type(3) h4 {
+    color: orange;
+    font-family: "maiden_orangeregular";
+}
+.footer > div > div:nth-of-type(2) > a {
+    display: block;
+    color: rgb(43, 156, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 0.5rem;
+}
+.footer > div > div:nth-of-type(3) > a {
+    display: inline-block;
+    font-size: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid transparent;
+    margin-right: 0.5rem;
+}
+.footer > div > div:nth-of-type(3) > a:nth-of-type(1) {
+    width: 15px;
+    background: url(../images/icons.png) no-repeat 0 0;
+}
+.footer > div > div:nth-of-type(3) > a:nth-of-type(1):hover {
+    background-position: 0 100%;
+}
+.footer > div > div:nth-of-type(3) > a:nth-of-type(2) {
+    background: url(../images/icons.png) no-repeat 32% 0;
+} 
+.footer > div > div:nth-of-type(3) > a:nth-of-type(2):hover {
+    background-position: 32% 100%;
+} 
+.footer > div > div:nth-of-type(3) > a:nth-of-type(3) {
+    background: url(../images/icons.png) no-repeat 100% 0;
+} 
+.footer > div > div:nth-of-type(3) > a:nth-of-type(3):hover {
+    background-position: 100% 100%;
+}
+.footer > div > div:nth-of-type(3) > p {
+    color: white;
+    font-size: 12px;
+    margin-top: 1rem;
+}
+.footer > div > div:nth-of-type(1), .footer > div > div:nth-of-type(2) {
+    background: url(../images/border-brown.jpg) repeat-y 100% 0;
+}
+.first > a:first-of-type:hover {
+    opacity: 90%;
+}

@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    color: rgb(238, 238, 238);
+}
+#topbar {
+    height: 200px;
+    background: url(images/header.jpg);
+    display: grid;
+    grid-template-areas:
+        "logo nav-bar"
+        "logo text-1"
+        "logo text-2";
+    justify-content: center;
+    column-gap: 2rem;
+}
+#topbarleft {
+    grid-area: logo;
+    width: 300px;
+    height: 200px;
+    background: url(images/logo.jpg);
+}
+#topbarright {
+    grid-area: nav-bar;
+}
+#topbarright ul {
+    display: flex;
+}
+#topbarright ul li {
+    padding: 10px 15px;
+}
+#topbarright ul li:hover {
+    opacity: 50%;
+}
+#topbarright ul li:hover a {
+    text-decoration: underline;
+}
+#topbarright ul li a {
+    color: #000;
+    font-weight: bold;
+}
+#topbar > h1 {
+    grid-area: text-1;
+    font-size: 25px;
+    color: rgb(242, 114, 14);
+    margin-top: -2rem;
+}
+#topbar > h2 {
+    grid-area: text-2;
+    color: white;
+    font-size: 22px;
+    margin-top: -3rem;
+}
+#content {
+    width: 60%;
+    margin: 2rem auto 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+#content #contentleft {
+    width: 60%;
+}
+#content #contentleft h1 {
+    font-size: 28px;
+    font-weight: normal;
+    color: grey;
+    border-bottom: 1px solid grey;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+#content #contentleft p.small {
+    color: darkred;
+    font-weight: bold;
+    padding-bottom: 0.75rem;
+}
+#content #contentleft blockquote {
+    padding: 1rem 2.5rem;
+    color: rgb(178, 162, 76);
+    font-weight: bold;
+}
+#content #contentleft blockquote a {
+    color: rgb(242, 114, 14);
+}
+#content #contentleft p {
+    line-height: 1.5;
+    color: grey;
+}
+#content #contentleft p:nth-of-type(3n) {
+    padding: 0.5rem 0 2rem 0;
+}
+#content #contentleft p a {
+    color: rgb(242, 114, 14);
+}
+#content #right_sidebar {
+    width: 30%;
+    height: 100%;
+}
+#content #right_sidebar h2 {
+    font-size: 28px;
+    font-weight: normal;
+    color: grey;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+#content #right_sidebar h2:not(#right_sidebar #About h2) {
+    padding-top: 15px;
+}
+#right_sidebar #About h2 {
+    border-bottom: 1px solid grey;
+}
+#right_sidebar #About p {
+    line-height: 1.5;
+    color: grey;
+}
+#right_sidebar ul ul li {
+    padding: 7px 0;
+    border-top: 1px solid grey;
+}
+#right_sidebar ul ul li:last-of-type {
+    border-bottom: 1px solid grey;
+}
+#right_sidebar ul ul li a {
+    color: darkred;
+}
+#right_sidebar ul ul li:hover {
+    background-color: rgb(245, 214, 219);
+}
+#right_sidebar ul ul li:hover a {
+    color: rgb(242, 114, 14);
+}
+#footerbg {
+    background-color: #000;
+    border-top: 6px solid rgb(242, 114, 14);;
+    padding: 2rem 0;
+}
+#footerbg #footer > div:last-child {
+    display: none;
+}
+#footerbg #footer {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#footerbg #footer #footerleft, #footerbg #footer #footerright, #footerbg #footer #footermiddle {
+    width: 30%;
+}
+#footerbg #footer ul li {
+    padding: 10px 0;
+    border-top: 1px solid grey;
+}
+#footerbg #footer ul li:last-child {
+    border-bottom: 1px solid grey;
+}
+#footerbg #footer ul li a {
+    color: lightgrey;
+}
+#footerbg #footer ul li:hover {
+    background-color: rgb(75, 75, 75);
+}
+#footerbg #footer ul li:hover a {
+    color: white;
+}
+#footerbg #footer h2 {
+    color: rgb(215, 210, 210);
+    padding-bottom: 2rem;
+}
+#credits {
+    background-color: #000;
+    color: rgb(215, 210, 210);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+#credits a {
+    color: rgb(242, 114, 14);
+}

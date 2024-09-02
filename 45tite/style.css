@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(img/sidegraphic.gif) repeat-y;
+}
+.page-wrapper {
+    margin-left: 100px;
+    background-color: #e0e8b6;
+}
+.page-wrapper .intro {
+    width: 552px;
+}
+.page-wrapper .intro #banner {
+    height: 455px;
+    background: url(img/top.gif);
+    margin-left: 0.5rem;
+}
+.page-wrapper .intro #banner h1 {
+    font-size: 0;
+}
+.page-wrapper .intro .summary {
+    width: 325px;
+    height: 35px;
+    background: url(img/bar.gif) no-repeat;
+    padding-left: 340px;
+    color: grey;
+    font-size: 13px;
+}
+.page-wrapper .intro .summary p {
+    font-size: 0;
+}
+.page-wrapper .intro .description h3 {
+    background: url(img/01.gif);
+}
+.page-wrapper .intro .description p, #finki-supporting > div p {
+    width: 433px;
+    text-align: justify;
+    color: #8e9883;
+    margin-left: 0.25rem;
+}
+#finki-supporting {
+    display: inline-block;
+}
+#finki-supporting > div h3, .page-wrapper .intro .description h3 {
+    display: block;
+    font-size: 0;
+    width: 400px;
+    height: 60px;
+    margin-left: 0.5rem;
+}
+.page-wrapper .intro .description h3 {
+    background: url(img/01.gif);
+}
+#finki-supporting > div:nth-of-type(1) h3 {
+    background: url(img/02.gif);
+}
+#finki-supporting > div:nth-of-type(2) h3 {
+    background: url(img/03.gif);
+}
+#finki-supporting > div:nth-of-type(3) h3 {
+    background: url(img/04.gif);
+}
+#finki-supporting > div:nth-of-type(4) h3 {
+    background: url(img/05.gif);
+}
+#finki-supporting footer {
+    width: 400px;
+    height: 100px;
+    background: url(img/footer.gif) no-repeat;
+    margin: 1rem 0 0 4.5rem;
+    padding-bottom: 1rem;
+}
+aside.sidebar {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -265px;
+}
+aside.sidebar ul {
+    list-style-type: none;
+}
+aside.sidebar .wrapper {
+    max-width: 250px;
+    color: #8e9883;
+}
+aside.sidebar .wrapper .current-hits > h3 {
+    display: block;
+    font-size: 0;
+    width: 190px;
+    height: 30px;
+    background: url(img/playlist.gif);
+}
+aside.sidebar .wrapper ul li {
+    padding: 5px 0;
+}
+aside.sidebar .wrapper a {
+    text-decoration: none;
+    color: #8e9883;
+    font-weight: 600;
+    font-size: 13px;
+}
+aside.sidebar .wrapper .current-hits ul li a:last-of-type {
+    color: #db7762;
+}
+aside.sidebar .wrapper .golden-oldies > h3 {
+    display: block;
+    font-size: 0;
+    width: 195px;
+    height: 30px;
+    background: url(img/goldenoldies.gif);
+}

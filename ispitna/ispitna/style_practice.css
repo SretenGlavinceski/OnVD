@@ -1,0 +1,383 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(main-bg.png);
+    background-size: contain;
+    font-family: “Helvetica Neue” , Helvetica, Arial, sans-serif;
+}
+#header-wrapper {
+    margin-top: 2rem;
+    background-color: #f9f9f9;
+    padding-top: 1rem;
+}
+header {
+    width: 80%;
+    margin: auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu {
+    padding: 10px 0;
+}
+.mobileUI-site-nav ul {
+    display: flex;
+    list-style-type: none;
+}
+.mobileUI-site-nav ul li {
+    padding: 10px 15px;
+}
+.mobileUI-site-nav ul li a {
+    text-decoration: none;
+    color: #101214;
+    text-transform: uppercase;
+}
+.current_page_item {
+    background-color: #101214;
+}
+ul li.current_page_item a {
+    color: white;
+}
+#logo h1 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #101214;
+    font-weight: 500;
+}
+#banner {
+    width: 80%;
+    margin: 5rem auto 0 auto;
+}
+.u {
+    display: flex;
+    justify-content: space-between;
+}
+.u section {
+    width: 43%;
+}
+.u section h2 {
+    font-size: 30px;
+    color: #101214;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.u section p {
+    line-height: 1.5;
+    color: lightslategray;
+    margin: 3rem 0;
+}
+#pic1 {
+    height: 50%;
+    width: 50%;
+}
+.button-style1 {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #2b8fc4;
+    color: white;
+    border-radius: 5px;
+}
+#featured-wrapper {
+    background: url(featured-bg.png);
+    background-size: contain;
+}
+#featured-wrapper #featured-content {
+    box-sizing: border-box;
+}
+#featured-content .row {
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 2.5rem 0;
+}
+#featured-content .row .u {
+    width: 33.33%;
+    box-sizing: border-box;
+}
+#featured-content .row .u section {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+#featured-content .row .u section h2 {
+    color: #f9f9f9;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#featured-content .row .u:nth-of-type(1)  {
+    background: url(featured-icon01.png) no-repeat;
+    background-size: 91px 68px;
+    background-position: 0 45%;
+}
+#featured-content .row .u:nth-of-type(2)  {
+    background: url(featured-icon02.png) no-repeat;
+    background-size: 91px 68px;
+    background-position: 0 45%;
+}
+#featured-content .row .u:nth-of-type(3)  {
+    background: url(featured-icon03.png) no-repeat;
+    background-size: 91px 68px;
+    background-position: 0 45%;
+}
+#featured-content .row .u section p {
+    font-size: 12px;
+    padding: 0 2rem 0 6.5rem;
+}
+#featured-content .row .u section a {
+    align-self: center;
+}
+
+#wrapper #page {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 2px solid #212124;
+}
+#wrapper #page #content {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+}
+#wrapper .row #content > section:nth-of-type(1) {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 4rem;
+}
+#wrapper .row #content > section:nth-of-type(1) h2 {
+    padding: 25px 0 35px 0;
+    color: #cfcfcf;
+}
+#wrapper .row #content > section:nth-of-type(1) > a:nth-of-type(1) {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: url(pic02.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#wrapper .row #content > section:nth-of-type(1) p {
+    font-size: 13px;
+    margin-top: 1.5rem;
+}
+#wrapper .row #content > section:nth-of-type(1) p a {
+    color: rgb(192, 192, 192);
+}
+#wrapper .row #content > section:nth-of-type(2) {
+    width: 100%;
+}
+#wrapper .row #content > section:nth-of-type(2) #two-column .row {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+#wrapper .row #content > section:nth-of-type(2) #two-column .row .u:nth-of-type(1) {
+    width: 48%;
+}
+#wrapper .row #content > section:nth-of-type(2) #two-column .row .u:nth-of-type(2) {
+    width: 48%;
+}
+#wrapper .row #content > section:nth-of-type(2) #two-column .row .u h2 {
+    margin-top: 2rem;
+    font-size: 22px;
+    color: #cfcfcf;
+}
+#wrapper .row #content > section:nth-of-type(2) #two-column .row .u section {
+    width: 100%;
+}
+#wrapper .row #content > section:nth-of-type(2) #two-column .row .u section p:nth-of-type(1) {
+    font-size: 13px;
+    margin: 2rem 0 2rem 0;
+}
+.style3 .first {
+    border-bottom: 1px solid grey;
+}
+.style3 {
+    list-style-type: none;
+}
+.style3 .first p:nth-of-type(1) span:nth-of-type(1) a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #2b8fc4;
+    border-radius: 5px;
+    color: white;
+    margin: 0 10px 0 0;
+    font-weight: bold;
+}
+.style3 .first p:nth-of-type(1) span:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+.style3 .first p:nth-of-type(2) {
+    margin: 1.5rem 0;
+}
+.style3 .first p:nth-of-type(2) a {
+    text-decoration: none;
+    font-size: 13px;
+    color: lightslategray;
+}
+.style3 li:nth-of-type(2) {
+    margin-top: 3rem;
+}
+.style3 li:nth-of-type(2) p {
+    margin: 0;
+}
+.style3 li:nth-of-type(2) p:nth-of-type(1) span a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #2b8fc4;
+    border-radius: 5px;
+    color: white;
+    margin: 0 10px 0 0;
+    font-weight: bold;
+}
+.style3 li:nth-of-type(2) p:nth-of-type(1) span:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+.style3 li:nth-of-type(2) p:nth-of-type(2) a {
+    text-decoration: none;
+    font-size: 13px;
+    color: lightslategray;
+}
+.style4 {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.style4 .first h3 {
+    color: #cfcfcf;
+    font-size: 16px;
+    margin: 1rem 0 -0.5rem 0;
+}
+.style4 li h3:not(.style4 .first h3) {
+    color: #cfcfcf;
+    margin-top: -1rem;
+    margin-bottom: -0.5rem;
+    padding: 0;
+}
+.style4 li p a {
+    display: block;
+    text-decoration: none;
+    color: lightslategray;
+    background: url(list-bullet.png) no-repeat;
+    background-size: 4px 4px;
+    background-position: 5px 7px;
+    text-indent: 1rem;
+}
+.style4 li p {
+    border-bottom: 1px solid grey;
+    padding-bottom: 1rem;
+}
+.style4 li:last-child p {
+    border-bottom: none;
+}   
+#wrapper #page #sidebar  {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+#sidebar #box1 {
+    width: 100%;
+    box-sizing: border-box;
+}
+#sidebar #box1 .grid .row {
+    display: flex;
+    align-items: flex-start;
+}
+#sidebar #box1 .grid .row .u {
+    width: 48%;
+    padding-top: 1rem;
+}
+#sidebar #box1 .grid .row .u section {
+    width: 100%;
+}
+#sidebar #box1 .grid .row .u section h2 {
+    font-size: 28px;
+    color: #cfcfcf;
+    text-transform:initial;
+    margin-bottom: 1rem;
+}
+#sidebar #box1 .grid .row .u section ul {
+    list-style-type: none;
+}
+#sidebar #box1 .grid .row .u section ul li {
+    border-bottom: 2px solid #212124;
+    padding: 0.75rem 0 0.75rem 1rem;
+    background: url(list-bullet.png) no-repeat;
+    background-size: 5px 5px;
+    background-position: 0 50%;
+}
+#sidebar #box1 .grid .row .u section ul li:last-child {
+    border-bottom: none;
+}
+#sidebar #box1 .grid .row .u section ul li a {
+    text-decoration: none;
+    color: lightslategray;
+}
+#sidebar #box2 {
+    width: 100%;
+}
+#sidebar #box2 h2 {
+    margin: 2rem 0 -1rem 0;
+    color: #cfcfcf;
+    font-size: 28px;
+    text-transform: initial;
+}
+#sidebar #box2 ul li p {
+    margin: 2rem 0 2rem 0;
+    padding-left: 5rem;
+}
+#sidebar #box2 ul li:not(:last-child) {
+    border-bottom: 2px solid #212124;
+}
+#sidebar #box2 ul li p a {
+    text-decoration: none;
+    color: lightslategrey;
+    font-size: 13px;
+}
+#sidebar #box2 ul li:nth-of-type(1) p {
+    background: url(pics07.jpg) no-repeat;
+    background-size: contain;
+}
+
+#sidebar #box2 ul li:nth-of-type(2) p {
+    background: url(pics08.jpg) no-repeat;
+    background-size: contain;
+}
+#sidebar #box2 ul li:nth-of-type(3) p {
+    background: url(pics09.jpg) no-repeat;
+    background-size: contain;
+}
+#sidebar #box2 ul li:nth-of-type(4) p {
+    background: url(pics10.jpg) no-repeat;
+    background-size: contain;
+}
+#sidebar #box2 ul {
+    list-style-type: none;
+}
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#copyright .row .u section {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: end;
+    padding: 3rem 0 1rem 0;
+}
+#copyright .row .u section p {
+    padding: 0;
+    margin: 0;
+}

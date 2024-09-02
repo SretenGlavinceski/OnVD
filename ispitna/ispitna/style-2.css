@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    background: url(main-bg.png);
+}
+#header-wrapper {
+    margin-top: 1.5rem;
+    background-color: rgb(244, 242, 242);
+}
+#header-wrapper #header {
+    width: 85%;
+    margin: auto;
+}
+#header-wrapper #header .row {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-wrapper #header .row #logo h1 a {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: rgb(40, 40, 40);
+}
+#header-wrapper #header .row .mobileUI-site-nav ul {
+    display: flex;
+}
+#header-wrapper #header .row .mobileUI-site-nav ul li {
+    padding: 10px 15px;
+}
+#header-wrapper #header .row .mobileUI-site-nav ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(40, 40, 40);
+}
+#header-wrapper #header .row .mobileUI-site-nav ul li a:hover {
+    color: rgb(80, 170, 226);
+}
+#header-wrapper #header .row .mobileUI-site-nav ul li:first-child {
+    background-color: rgb(40, 40, 40);
+}
+#header-wrapper #header .row .mobileUI-site-nav ul li:first-child a {
+    color: white;
+}
+#header-wrapper #banner {
+    width: 85%;
+    margin: auto;
+}
+#header-wrapper #banner .u {
+    display: flex;
+}
+#header-wrapper #banner .u section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#header-wrapper #banner .u section h2 {
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+#header-wrapper #banner .u section p {
+    line-height: 1.5;
+    color: rgb(93, 92, 92);
+    margin: 2rem 0;
+}
+#header-wrapper #banner .u > img {
+    width: 50%;
+}
+a.button-style1 {
+    display: inline-block;
+    width: 130px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 170, 226);
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    box-shadow: -1px -1px 1px white;
+}
+a.button-style1:hover {
+    transform: scale(1.15);
+}
+#featured-wrapper {
+    background: url(featured-bg.png);
+}
+#featured-wrapper .grid-layout {
+    width: 85%;
+    margin: auto;
+}
+#featured-wrapper .grid-layout > .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+#featured-wrapper .grid-layout > .row > div {
+    width: 32.5%;
+    padding: 1rem 0;
+}
+#featured-wrapper .grid-layout > .row > div section h2 {
+    margin-bottom: 1.25rem;
+    color: rgb(236, 236, 236);
+}
+#featured-wrapper .grid-layout > .row > div section p {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    padding-left: 110px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+#featured-wrapper .grid-layout > .row > div:nth-of-type(1) section p {
+    background: url(featured-icon01.png) no-repeat;
+}
+#featured-wrapper .grid-layout > .row > div:nth-of-type(2) section p {
+    background: url(featured-icon02.png) no-repeat;
+}
+#featured-wrapper .grid-layout > .row > div:nth-of-type(3) section p {
+    background: url(featured-icon03.png) no-repeat;
+}
+#featured-wrapper .grid-layout > .row > div section {
+    display: flex;
+    flex-direction: column;
+}
+#featured-wrapper .grid-layout > .row > div section a {
+    align-self: center;
+}
+#wrapper > #page {
+    padding: 2rem 0;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    color: wheat;
+}
+#wrapper > #page > #content {
+    width: 65%;
+}
+#wrapper > #page > #sidebar {
+    width: 35%;
+}
+#wrapper > #page > #content > section:first-of-type {
+    border-bottom: 1px solid grey;
+}
+#wrapper > #page > #content h2 {
+    color: rgb(236, 236, 236);
+}
+#wrapper > #page > #content > section:first-of-type h2 {
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+#wrapper > #page > #content > section:first-of-type > a:first-of-type {
+    display: block;
+    width: 100%;
+    height: 217px;
+    background: url(pic02.jpg) no-repeat;
+    background-size: contain;
+    margin: 1.25rem 0;
+}
+#wrapper > #page > #content p {
+    color: grey;
+    font-size: 14px;
+    line-height: 1.5;
+}
+#wrapper > #page > #content p a {
+    color: grey;
+    text-decoration: underline;
+}
+#wrapper > #page > #content > section:first-of-type > a.button-style1 {
+    margin: 1rem 0 2rem 0;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row {
+    display: flex;
+    column-gap: 1rem;
+    margin-top: 2rem;
+}
+#wrapper > #page > #content > section:last-of-type h2 {
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u ul.style3 {
+    margin: 1rem 0;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u ul.style3 li {
+    padding: 1.5rem 0;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u ul.style3 li .date a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: rgb(80, 170, 226);
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u ul.style3 li:first-of-type {
+    border-bottom: 1px solid rgb(70, 69, 69);
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u ul.style3 li .heading-title {
+    color: white;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u ul.style3 li p:last-of-type {
+    margin-top: 1rem;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u ul.style3 li p:last-of-type a {
+    text-decoration: none;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u:last-of-type h3 {
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u:last-of-type ul li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgb(70, 69, 69);
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u:last-of-type ul li:first-of-type {
+    padding: 0 0 1rem 0;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u:last-of-type ul li:last-of-type {
+    border: none;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u:last-of-type ul li > p {
+    text-indent: 0.75rem;
+    background: url(list-bullet.png) no-repeat;
+    background-position: 0 8px;
+}
+#wrapper > #page > #content > section:last-of-type > #two-column .row > .u:last-of-type ul li > p a {
+    text-decoration: none;
+}
+#wrapper > #page > #sidebar {
+    padding-left: 0.75rem;
+}
+#wrapper > #page > #sidebar > #box1 .row {
+    display: flex;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+#wrapper > #page > #sidebar > #box1 .row > div {
+    flex: 1;
+}
+#wrapper > #page > #sidebar > #box1 .row > div h2 {
+    color: whitesmoke;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+#wrapper > #page > #sidebar > #box1 .row > div ul li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid grey;
+}
+#wrapper > #page > #sidebar > #box1 .row > div ul li:last-of-type {
+    border: none;
+} 
+#wrapper > #page > #sidebar > #box1 .row > div ul li a {
+    color: grey;
+    padding-left: 1rem;
+    background: url(list-bullet.png) no-repeat;
+    background-position: 3px 7px;
+}
+#wrapper > #page > #sidebar > #box2 h2 {
+    color: whitesmoke;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+#wrapper > #page > #sidebar > #box2 ul li {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid grey;
+}
+#wrapper > #page > #sidebar > #box2 ul li:last-of-type {
+    border: none;
+}
+#wrapper > #page > #sidebar > #box2 ul li p {
+    padding-left: 6rem;
+    font-size: 15px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+#wrapper > #page > #sidebar > #box2 ul li:nth-of-type(1) p {
+    background: url(pics07.jpg) no-repeat;
+}
+#wrapper > #page > #sidebar > #box2 ul li:nth-of-type(2) p {
+    background: url(pics08.jpg) no-repeat;
+}
+#wrapper > #page > #sidebar > #box2 ul li:nth-of-type(3) p {
+    background: url(pics09.jpg) no-repeat;
+}
+#wrapper > #page > #sidebar > #box2 ul li:nth-of-type(4) p {
+    background: url(pics10.jpg) no-repeat;
+}
+#wrapper > #page > #sidebar > #box2 ul li p a {
+    color: grey;
+}
+#copyright {
+    width: 85%;
+    margin: 1rem auto 0 auto;
+    border-top: 1px solid grey;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#copyright p {
+    color: grey;
+}
+#copyright p a {
+    color: grey;
+    text-decoration: underline;
+}
+#wrapper > #page > #sidebar > #box1 .row > div ul li a:hover {
+    color: red;
+    border: 1px dashed red;
+}
+#wrapper > #page > #sidebar > #box1 .row > div ul li a {
+    border: 1px solid transparent;
+}

@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p:not(#fcse-intro #fcse-summary p) {
+    font-size: 16px;
+}
+a {
+    color:  #2babe1;
+}
+body {
+    background-color:  #edf6ff;
+}
+.page-wrapper {
+    z-index: -1;
+}
+#fcse-intro {
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    background: url(img/top.png);
+    margin-top: 3rem;
+}
+#fcse-intro header {
+    border-top: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+#fcse-intro header h1 {
+    background-color: rgb(237, 246, 255);
+    margin-top: -2rem;
+    padding: 0.5rem 1rem;
+    font-size: 45px;
+    font-weight: normal;
+}
+#fcse-intro header h2 {
+    position: relative;
+    left: 200px;
+    font-size: 20px;
+    color: darkred;
+}
+#fcse-intro #fcse-summary {
+    display: inline-block;
+    line-height: 1.5;
+    width: 250px;
+    position: relative;
+    left: 73%;
+    top: 10%;
+    font-size: 13px;
+    color: darkred;
+}
+#fcse-miniintro {
+    width: 500px;
+    position: relative;
+    top: 52%;
+    line-height: 1.5;
+    color: grey;
+    padding-right: 2rem;
+}
+#fcse-miniintro h3 , #fcse-people h3, #fcse-walter h3, #fcse-jessie h3{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 2rem 0;
+    color: red;
+}
+#fcse-people {
+    width: 500px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    line-height: 1.5;
+    color: grey;
+    padding-right: 2rem;
+}
+#fcse-walter {
+    width: 1000px;
+    margin: 2rem auto;
+    background: url(img/walter.png) no-repeat;
+    background-position: 90% 50%;
+}
+#fcse-walter p, #fcse-jessie p {
+    width: 500px;
+    display: inline-block;
+    line-height: 1.5;
+    color: grey;
+    padding-right: 2rem;
+}
+#fcse-jessie h3 {
+    text-align: end;
+    padding-right: 250px;
+}
+#fcse-jessie p {
+    width: 500px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    line-height: 1.5;
+    color: grey;
+    padding-right: 2rem;
+}
+#fcse-jessie {
+    width: 1000px;
+    margin: auto;
+    padding: 3rem;
+    background: url(img/jessie.png) no-repeat;
+    background-position: 5% 50%;
+}
+#fcse-history {
+    border-top: 2px solid lightskyblue;
+    padding: 2rem 12.5%;
+    background-color: white;
+}
+#fcse-history h3 {
+    color: red;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 2rem 0;
+    text-align: center;
+}
+#fcse-history p {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    padding-right: 2rem;
+    line-height: 1.5;
+    color: grey;
+}
+#fcse-footer {
+    box-sizing: content-box;
+    border-bottom: 5px solid lightskyblue;
+    background-color: rgb(17, 76, 101);
+    display: flex;
+    justify-content: center;
+}
+#fcse-footer a {
+    color: white;
+    padding: 13px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.sidebar {
+   background-color: rgb(37, 160, 205);
+   border-top: 5px solid white;
+}
+.sidebar .wrapper {
+    width: 1000px;
+    margin: auto;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 30% 70%;
+    grid-template-areas: "left right-top" "left right-bottom";
+}
+ul {
+    list-style-type: none;
+}
+#bb-selection {
+    grid-area: left;
+    margin-top: 1rem;
+}
+.sidebar .wrapper ul li {
+    padding: 0.25rem 0;
+}
+.sidebar .wrapper ul li a {
+    text-decoration: none;
+    color: white;
+}
+#fcse-interviews {
+    grid-area: right-top;
+}
+#fcse-related {
+    grid-area: right-bottom;
+}
+aside.sidebar .wrapper h3 {
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(14, 70, 99);
+    margin: 1rem 0;
+}
+#fcse-related {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+#fcse-interviews {
+    margin-top: 1rem;
+}
+#fcse-related, #fcse-interviews {
+    padding-left: 2rem;
+    border-left: 2px solid white;
+}
+.extra1 {
+    box-sizing: content-box;
+    border-top: 3px solid red;
+    border-bottom: 3px solid lightskyblue;
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 67.8%;
+    z-index: -1;
+}
+.extra2 {
+    width: 200px;
+    border: 1px solid red;
+    position: absolute;
+    top: 236%;
+    left: 45%;
+}

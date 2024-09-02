@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+p, p > a {
+    color: rgb(87, 70, 25);
+    line-height: 1.5;
+    font-size: 14px;
+}
+#background {
+    background: url(../images/bg-pattern.jpg) repeat-x;
+}
+#page {
+    width: 852px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+#navigation {
+    padding: 1rem 0;
+}
+#navigation ul {
+    display: flex;
+}
+#navigation ul li {
+    border-right: 1px solid grey;
+    flex: 1;
+    padding: 15px;
+    background: url(../images/bg-navigation.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navigation ul li:hover {
+    background: url(../images/bg-menu.png) repeat-x 0 50%;
+}
+#navigation ul li:hover a {
+    color: rgb(27, 27, 66);
+}
+#navigation ul li a {
+    text-transform: uppercase;
+    color: white;
+}
+#adbox {
+    padding-bottom: 1rem;
+}
+#adbox > img {
+    box-sizing: border-box;
+    border: 4px solid white;
+    width: 848px;
+    height: 421px;
+}
+#adbox > h1 {
+    margin: 0.5rem 0;
+    font-weight: normal;
+    color: rgb(18, 98, 94);
+    text-transform: uppercase;
+    font-size: 22px;
+}
+#adbox > p > a {
+    text-decoration: underline;
+}
+#adbox > p > a:hover {
+    color: rgb(146, 121, 53);
+}
+#main {
+    vertical-align: top;
+    display: inline-block;
+    width: 63%;
+}
+#main .box {
+    background-color: white;
+}
+#main .box h3 {
+    font-weight: normal;
+    color: rgb(18, 98, 94);
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+#main > .box:first-of-type > div {
+    padding: 10px;
+}
+#main > .box li {
+    padding: 0.45rem 0 0.75rem 0;
+    border-top: 2px dotted rgb(87, 70, 25);
+}
+#main > .box li:last-of-type {
+    border-bottom: 2px dotted rgb(87, 70, 25);
+}
+#main > .box li > h4 > a {
+    color: rgb(87, 70, 25);
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+}
+#main > .box li > span {
+    font-size: 12px;
+    color: rgb(87, 70, 25);
+    display: block;
+    margin-bottom: 1rem;
+}
+#testimonials {
+    margin-top: 1rem;
+}
+#testimonials > div {
+    padding: 10px 15px;
+}
+#testimonials p > span  {
+    display: inline-block;
+    text-align: end;
+    margin-left: 23rem;   
+}
+#testimonials p > span a {
+    color: rgb(18, 98, 94);
+}
+#testimonials p > span a:hover {
+    color: rgb(53, 177, 171);
+}
+#sidebar {
+    display: inline-block;
+    width: 32%;
+}
+#sidebar > div {
+    margin: 0 0 0.4rem 1.5rem;
+}
+#sidebar > div:hover {
+    opacity: 90%;
+}
+#footer > div {
+    display: flex;
+    justify-content: space-between;
+    width: 852px;
+    margin: auto;
+    padding: 0.25rem;
+    background-color: rgb(171, 163, 140);
+}
+#footer > div ul {
+    display: flex;
+}
+#footer > div ul li {
+    padding: 10px 15px;
+}
+#footer > div ul li a {
+    color: rgb(87, 70, 25);
+}
+#footer > div ul li a:hover {
+    color: rgb(135, 117, 70);
+}
+#footer > div div#connect a {
+    margin-top: 0.5rem;
+    display: inline-block;
+    width: 31px;
+    height: 28px;
+    background: url(../images/icons.png) no-repeat;
+}
+#footer > div div#connect a:nth-of-type(1) {
+    background-position: 0 14.5%;
+}
+#footer > div div#connect a:nth-of-type(1):hover {
+    background-position: 0 0;
+}
+#footer > div div#connect a:nth-of-type(2):hover {
+    background-position: 2px 28%;
+}
+#footer > div div#connect a:nth-of-type(2) {
+    background-position: 2px 42.5%;
+}
+#footer > div div#connect a:nth-of-type(3):hover {
+    background-position: 1px 57%;
+}
+#footer > div div#connect a:nth-of-type(3) {
+    background-position: 1px 71.5%;
+}
+#footer > div div#connect a:nth-of-type(4):hover {
+    background-position: 2px 87%;
+}
+#footer > div div#connect a:nth-of-type(4) {
+    background-position: 2px 101.5%;
+}
+#footer > p {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+}

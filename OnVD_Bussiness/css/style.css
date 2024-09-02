@@ -1,0 +1,325 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+#header {
+    height: 150px;
+    background-color: #0c2635;
+    display: grid;
+    grid-template-columns: 650px 250px;
+    grid-template-rows: 100px auto;
+    grid-template-areas:
+        "upper-img upper-img"
+        "nav-bar  input-type";
+    justify-content: center;
+    row-gap: 2rem;
+}
+#header > a {
+    grid-area: upper-img;
+    align-self: center;
+    justify-self: start;
+}
+#header #navigation {
+    grid-area: nav-bar;
+    background-color: lightgrey;
+}
+#header #search {
+    grid-area: input-type;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding-right: 1rem;
+}
+#header #search form .txtfield {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 1px;
+}
+#header #search form input:nth-of-type(2) {
+    border: none;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 31%;
+    right: 10%;
+    background: url(../images/spotlight.gif);
+    cursor: pointer;
+}
+#header #navigation ul {
+    display: flex;
+    justify-content: space-between;
+}
+#header #navigation ul li {
+    padding: 10px 15px;
+}
+#header #navigation ul li a {
+    color: #0c2635;
+    font-weight: bold;
+}
+#header #navigation ul li:hover a {
+    color: #226084;
+}
+#main {
+    width: 900px;
+    margin: auto;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 24.5% 74.5%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "text-main img-main"
+        "parts parts";
+    justify-content: space-between;
+}
+#main #textDesigner {
+    grid-area: text-main;
+    padding: 1rem 0.85rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+#main #textDesigner h3 {
+    font-weight: normal;
+    color: #285e7e;
+}
+#main #textDesigner h3 a {
+    color: #356784;
+    font-weight: bold;
+}
+#main #textDesigner p {
+    line-height: 1.5;
+    color: grey;
+}
+#main #images {
+    grid-area: img-main;
+    display: grid;
+    grid-template-columns: 67% 33%;
+    grid-template-rows: 144px 135px;
+    grid-template-areas:
+        "main-1 main-2"
+        "main-1 main-3";
+    row-gap: 2px;
+}
+#main #images div:nth-of-type(1) {
+    grid-area: main-1;
+    background: url(../images/discussing2.jpg) no-repeat;
+    margin-right: 2px;
+}
+#main #images div:nth-of-type(2) {
+    grid-area: main-2;
+    background: url(../images/shake-hands.jpg) no-repeat;
+}
+#main #images div:nth-of-type(3) {
+    grid-area: main-3;
+    background: url(../images/professionals.jpg) no-repeat;
+}
+#main #discription {
+    margin-top: 0.75rem;
+    grid-area: parts;
+    display: flex;
+    font-size: 14px;
+}
+#main #discription .dis {
+    background-color: rgb(71, 125, 159);
+    border-right: 1px solid #0c2635;
+    flex: 1;
+    padding: 0.5rem 0;
+    display: grid;
+    grid-template-areas:
+        "img-dis title-dis"
+        "img-dis paragraph-dis";
+    color: white;
+}
+#main #discription .dis:last-of-type {
+    border: none;
+}
+#main #discription .dis h4 {
+    grid-area: title-dis;
+    padding: 0.25rem 0.5rem;
+}
+#main #discription .dis p {
+    grid-area: paragraph-dis;
+    padding: 0.25rem 0.5rem;
+}
+#main #discription .dis > a {
+    display: inline-block;
+    grid-area: img-dis;
+    padding-left: 0.5rem;
+}
+#contents {
+    background-color: #01374f;
+    margin-top: -3rem;
+    padding-top: 5rem;
+}
+#contents .body {
+    width: 900px;
+    margin: auto;
+    display: flex;
+}
+#contents .body #sidebar {
+    width: 33%;
+    color: white;
+}
+#contents .body #sidebar h3 {
+    letter-spacing: 1px;
+}
+#contents .body #sidebar ul li {
+    padding: 1rem 0;
+}
+#contents .body #sidebar ul li span {
+    padding-top: 0.5rem;
+    font-size: 13px;
+    color: #35738e;
+    display: block;
+}
+#contents .body #sidebar ul li span a {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    text-align: center;
+    color: white;
+    background: url(../images/bg-comment.gif);
+}
+#contents .body #main-2 {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    background-color: #03354e;
+    color: white;
+}
+#contents .body #main-2 > span {
+    display: block;
+    margin-left: 0.75rem;
+    font-size: 17px;
+}
+#contents .body #main-2 > span a {
+    font-weight: bold;
+    color: white;
+}
+#contents .body #main-2 > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    gap: 1rem;
+}
+#contents .body #main-2 > ul li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    padding-right: 1rem;
+    color: rgb(223, 220, 220);
+}
+#contents .body #main-2 > ul li > p {
+    padding: 0.5rem 0.75rem;
+    color: rgb(191, 179, 179);
+}
+#contents .body #main-2 > ul li > a:hover {
+    opacity: 30%;
+}
+#contents .body #main-2 > p {
+    margin: 2rem 0 2rem 0.75rem;
+    color: rgb(191, 179, 179);
+    font-size: 15px;
+}
+#contents .body #main-2 > p a {
+    color: white;
+    font-weight: bold;
+}
+#footer {
+    padding: 2rem 0 0.5rem 0;
+    background-color: #0e2535;
+    display: grid;
+    grid-template-columns: 300px 150px 450px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "contacts connect newsletter"
+        "footnote footnote footnote";
+    justify-content: center; 
+    font-size: 13px;   
+    color: #406171;
+    row-gap: 1.5rem;
+}
+#footer .contacts {
+    grid-area: contacts;
+}
+#footer .contacts li {
+    padding: 0.75rem 0;
+    display: flex;
+}
+#footer .contacts li:nth-of-type(1) p {
+    margin-left: 1rem;
+}
+#footer .contacts li:nth-of-type(2) p {
+    margin-left: 0.25rem;
+}
+#footer .contacts li:nth-of-type(3) p {
+    margin-left: 0.9rem;
+}
+#footer .contacts h3 {
+    font-size: 20px;
+    color: #5b8da6;
+}
+#footer #connect {
+    grid-area: connect;
+    padding-left: 0.5rem;
+}
+#footer #connect h3 {
+    font-size: 20px;
+    color: #5b8da6;
+}
+#footer #connect li {
+    padding: 5px 0;
+}
+#footer #connect li a {
+    color: #406171;
+    font-size: 16px;
+}
+#footer #newsletter {
+    grid-area: newsletter;
+}
+#footer #newsletter p {
+    padding-bottom: 1rem;
+    line-height: 1.5;
+}
+#footer #newsletter p > b {
+    display: block;
+    font-size: 20px;
+    color: #5b8da6;
+    line-height: normal;
+    padding-bottom: 0.75rem;
+}
+#footer #newsletter form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3%;
+}
+#footer #newsletter form input.txtfield {
+    width: 44%;
+    border: none;
+    border-radius: 7px;
+    padding: 6px 15px;
+}
+#footer #newsletter form input.button {
+    width: 30px;
+    height: 30px;
+    background: url(../images/check.jpg) no-repeat;
+    background-size: contain;
+}
+#footer .footnote {
+    grid-area: footnote;
+    justify-self: center;
+}

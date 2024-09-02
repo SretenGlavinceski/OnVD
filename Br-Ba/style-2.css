@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    background-color: #edf6ff;
+}
+#fcse-intro {
+    width: 1000px;
+    margin: auto;
+    height: 400px;
+    background: url(img/top.png);
+    border-top: 4px solid red;
+    margin-top: 3rem;
+}
+#fcse-intro header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fcse-intro header h1 {
+    margin-top: -1.5rem;
+    font-size: 45px;
+    color: rgb(12, 12, 62);
+    font-weight: normal;
+    background-color: #edf6ff;
+    padding: 0 1rem;
+}
+#fcse-intro header h2 {
+    position: relative;
+    left: 15rem;
+    font-size: 20px;
+    color: red;
+    font-style: italic;
+}
+#fcse-summary {
+    width: 330px;
+    color: darkred;
+    position: relative;
+    top: 10%;
+    left: 73%;
+}
+#fcse-miniintro {
+    position: relative;
+    top: 66.2%;
+}   
+#fcse-supporting {
+    width: 1000px;
+    margin: auto;
+}
+#fcse-people, #fcse-jessie {
+    display: grid;
+    grid-template-columns: 485px 30px 485px;
+    grid-template-areas: "empty emp h3-el"
+                        "empty emp par1-el"
+                        "empty emp par2-el";
+}
+#fcse-people h3, #fcse-jessie h3 {   
+    grid-area: h3-el;
+}
+#fcse-people p:nth-of-type(1), #fcse-jessie p {
+    grid-area: par1-el;
+}
+#fcse-people p:nth-of-type(2) {
+    grid-area: par2-el;
+}
+#fcse-supporting p, #fcse-miniintro p {
+    line-height: 1.5;
+    width: 485px;
+    color: rgb(36, 35, 35)
+}
+#fcse-supporting h3, #fcse-miniintro h3 {
+    color: red;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 1rem 0;
+}
+#fcse-walter {
+    margin: 2rem 0;
+    background: url(img/walter.png) no-repeat;
+    background-position: 85% 50%;
+}
+#fcse-jessie:before {
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background-color: red;
+    position: relative;
+    left: 83%;
+    top: -2rem;
+}
+#fcse-jessie {
+    background: url(img/jessie.png) no-repeat;
+    background-position: 5% 50%;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+}
+#fcse-history h3 {
+    text-align: center;
+}
+#fcse-history p:nth-of-type(1){
+    float: left;
+}
+#fcse-history p:nth-of-type(2){
+    float: right;
+}
+#fcse-footer {
+    clear: both;
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+#fcse-footer a {
+    display: inline-block;
+    padding: 5px 20px 15px 20px;
+    color: white;
+}
+.sidebar {
+    background-color: #2babe1;
+    margin-top: 2rem;
+    padding: 2rem 13%;
+    border-top: 4px solid white;
+}
+.sidebar .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100px 200px;
+    grid-template-areas: "left-1 righttop"
+                            "left-1 rightbottom";
+}
+.sidebar .wrapper #bb-selection {
+    grid-area: left-1;
+}
+.sidebar .wrapper #fcse-interviews {
+    grid-area: righttop;
+    border-left: 2px solid white;
+    padding-left: 1rem;
+}
+.sidebar .wrapper #fcse-related {
+    grid-area: rightbottom;
+    border-left: 2px solid white;
+    padding-left: 1rem;
+}
+.sidebar .wrapper h3 {
+    color: rgb(10, 10, 62);
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+.sidebar .wrapper ul li {
+    padding: 4px 0;
+}
+.sidebar .wrapper ul li a {
+    color: white;
+}
+.extra1 {
+    z-index: -1;
+    display: block;
+    height: 440px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 68.4%;
+    box-sizing: content-box;
+    border-top: 4px solid red;
+    border-bottom: 4px solid #afe3f9;
+}
+.extra2 {
+    z-index: -1;
+    display: block;
+    height: 350px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 276%;
+    border-top: 4px solid #afe3f9;
+}
+.extra3 {
+    z-index: -1;
+    display: block;
+    height: 65px;
+    width: 100%;
+    background-color: rgb(33, 33, 120);
+    position: absolute;
+    top: 329%;
+    border-bottom: 4px solid #2babe1;
+}

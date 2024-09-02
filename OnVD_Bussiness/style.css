@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+#header {
+    color: rgb(12, 38, 53);
+    max-height: 110px;
+    background-color: rgb(12, 38, 53);
+    padding: 1rem 15%;
+    display: grid;
+    grid-template-areas:
+        "title title empty"
+        "nav-bar nav-bar search";
+    row-gap: 3rem;
+}
+#header > a {
+    grid-area: title;
+}
+#header #navigation {
+    grid-area: nav-bar;
+    background-color: lightgrey;
+}
+#header #navigation ul {
+    display: flex;
+}
+#header #navigation ul li {
+    padding: 10px 20px;
+}
+#header #navigation ul li a {
+    font-weight: bold;
+}
+#header #navigation ul li a:hover {
+    color: rgb(69, 114, 141);
+}
+#header #search {
+    background-color: lightgrey;
+    grid-area: search;
+    padding: 0 10px;
+} 
+#header #search form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+#header #search form input:nth-of-type(1) {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+#header #search form input:nth-of-type(2) {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: url(images/spotlight.gif);
+    position: absolute;
+    right: 15px;
+}
+#header a {
+    color: rgb(12, 38, 53);
+}
+#main {
+    color: rgb(12, 38, 53);
+    width: 70%;
+    margin: 1.5rem auto 0 auto;
+    display: grid;
+    grid-template-rows: 140px 122px 130px;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-areas:
+        "text-1 images-1 images-1"
+        "text-1 images-1 images-1"
+        "boxes boxes boxes";
+    justify-content: space-between;
+}
+#main a {
+    color: rgb(12, 38, 53);
+}
+#main #textDesigner {
+    grid-area: text-1;
+}
+#main #textDesigner h3 {
+    padding: 2rem;
+    font-weight: normal;
+}
+#main #textDesigner h3 a {
+    font-weight: bold;
+}
+#main #textDesigner p {
+    padding: 0 2rem 1rem 2rem;
+    font-size: 16px;
+    line-height: 1.25;
+}
+#main #images {
+    grid-area: images-1;
+    display: grid;
+    grid-template-rows: 130px 130px;
+    grid-template-columns: 64.8% 34.8%;
+    grid-template-areas:
+        "img-1 img-2"
+        "img-1 img-3";
+    justify-content: space-between;
+    row-gap: 3px;
+}
+#main #images .img-1 { 
+    grid-area: img-1; 
+    background: url(images/discussing2.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+#main #images .img-2 {
+    grid-area: img-2; 
+    background: url(images/shake-hands.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+#main #images .img-3 {
+    grid-area: img-3; 
+    background: url(images/professionals.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+#main #discription {
+    grid-area: boxes;
+    display: flex;
+}
+#main #discription > div {
+    background-color: rgb(201, 229, 246);
+    padding: 1rem 0.5rem;
+    display: grid;
+    grid-area:
+        "image-left title-right"
+        "image-left paragraph-right";
+}
+#main #discription > div:nth-of-type(1) {
+    background-color: rgb(201, 229, 246);
+}
+#main #discription > div:nth-of-type(2) {
+    background-color: rgb(175, 218, 244);
+}
+#main #discription > div:nth-of-type(3) {
+    background-color: rgb(158, 208, 239);
+}
+#main #discription > div > a {  
+    grid-area: image-left;
+}
+#main #discription > div > h4 {
+    grid-area: title-right;
+    padding: 0 0 1rem 6rem;
+}
+#main #discription > div > p {
+    grid-area: paragraph-right;
+    margin: 2.5rem 0 1rem 6rem;
+    font-size: 14px;
+}
+#contents {
+    background-color: #023d58;
+    color: whitesmoke;
+    margin-top: -3rem;
+}
+#contents .body {
+    width: 70%;
+    margin: auto;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+#contents .body #sidebar {
+    width: 34%;
+}
+#contents .body #sidebar h3 {
+    margin-bottom: 1.5rem;
+}
+#contents .body #sidebar ul li {
+    margin-bottom: 2rem;
+}
+#contents .body #sidebar ul li span {
+    display: block;
+    padding-top: 0.5rem;
+    font-size: 13px;
+    color: rgb(123, 156, 173);
+}
+#contents .body #sidebar ul li span a {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url(images/bg-comment.gif);
+    text-align: center;
+    color: whitesmoke;
+}
+#contents .body #main-2 {
+    background-color: #033a53;
+    width: 64%;
+    padding: 0 1rem;
+}
+#contents .body #main-2 span a {
+    color: whitesmoke;
+    font-weight: bold;
+}
+#contents .body #main-2 ul {
+    margin: 1rem 0 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    row-gap: 1rem;
+}
+#contents .body #main-2 ul li a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#contents .body #main-2 ul li a:hover {
+    opacity: 50%;
+}
+#contents .body #main-2 ul li a h3 {
+    padding-left: 1rem;
+    color: whitesmoke;
+}
+#contents .body #main-2 > p a {
+    color: whitesmoke;
+    font-weight: bold;
+}
+#footer {
+    background-color: #0c2635;
+    padding: 2rem 15%;
+    display: grid;
+    grid-template-columns: 34% 14% 49%;
+    grid-template-areas:
+        "contacts connect newsletter"
+        "copyright copyright copyright";
+    column-gap: 1.5%;
+    color: #6096b5;
+    font-size: 14px;
+}
+#footer .contacts {
+    grid-area: contacts;
+}
+#footer .contacts li {
+    display: flex;
+    padding: 0.5rem 0;
+}
+#footer #connect {
+    grid-area: connect;
+}
+#footer #connect li a {
+    font-size: 17px;
+    font-weight: bold;
+    color: #6096b5;
+}
+#footer #newsletter {
+    grid-area: newsletter;
+    line-height: 1.5;
+}
+#footer #newsletter form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+#footer #newsletter form input:nth-of-type(1), #footer #newsletter form input:nth-of-type(2) {
+    width: 45%;
+    border: none;
+    padding: 6px 0;
+    border-radius: 5px;
+    text-indent: 1rem;
+}
+#footer #newsletter form input:nth-of-type(3) {
+    width: 6%;
+    background: url(images/button-check.gif);
+} 
+#footer .contacts h3, #footer #connect h3, #footer #newsletter > p b {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    line-height: normal;
+}
+#footer > span {
+    grid-area: copyright;
+    justify-self: center;
+    margin-top: 2rem;
+}

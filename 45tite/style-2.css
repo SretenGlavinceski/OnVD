@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    font-family: 'Trebuchet MS', 'Times New Roman', serif;
+    font-size: 12px;
+    padding: 3px 5px;
+    line-height: 1.5;
+    text-align: justify;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(37, 60, 49);
+}
+body {
+    background: url(img/sidegraphic.gif) no-repeat;
+    background-color: rgb(224, 232, 182);
+    color: rgb(37, 60, 49);
+}
+.page-wrapper {
+    margin-left: 100px;
+    padding-left: 10px;
+}
+#finki-intro > #banner h1 {
+    font-size: 0;
+    width: 552px;
+    height: 455px;
+    background: url(img/top.gif);
+}
+#finki-intro > #finki-summary {
+    height: 35px;
+    background: url(img/bar.gif) no-repeat;
+    padding-left: 320px;
+    background-position: -25px 0;
+}
+#finki-intro > #finki-summary p {
+    font-size: 0;
+}
+#finki-description, #finki-supporting {
+    width: 400px;
+    display: inline-block;
+}
+#finki-description h3, #finki-supporting h3, #finki-supporting footer {
+    font-size: 0;
+    width: 400px;
+    height: 60px;
+}
+#finki-description h3 {
+    background: url(img/01.gif);
+}
+#finki-more h3 {
+    background: url(img/02.gif);
+}
+#finki-history70 h3 {
+    background: url(img/03.gif);
+}
+#finki-history80 h3 {
+    background: url(img/04.gif);
+}
+#finki-decline h3 {
+    background: url(img/05.gif);
+}
+#finki-supporting footer {
+    height: 100px;
+    background: url(img/footer.gif)
+}
+aside.sidebar {
+    display: inline-block;
+    vertical-align: top;
+    margin: -18rem 0 0 1rem;
+    width: 250px;
+}
+aside.sidebar h3 {
+    font-size: 0;
+    width: 190px;
+    height: 30px;
+}
+aside.sidebar #current-hits h3 {
+    background: url(img/playlist.gif);
+}
+aside.sidebar #golden-oldies h3 {
+    width: 195px;
+    background: url(img/goldenoldies.gif);
+}
+aside.sidebar nav ul {
+    padding: 5px 0;
+}
+aside.sidebar ul li {
+    padding: 6px 0;
+}
+#current-hits nav ul li a:last-of-type {
+    color: rgb(239, 111, 132);
+}
+#current-hits nav ul li a:last-of-type:hover {
+    text-decoration: underline;
+}
+#current-hits nav ul li a:first-of-type:hover, #golden-oldies ul li a:hover {
+    font-weight: bold;
+    border-bottom: 1px dotted rgb(239, 111, 132);
+}

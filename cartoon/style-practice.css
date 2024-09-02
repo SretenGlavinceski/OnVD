@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    background: url(images/bg-body.jpg);
+}
+#header {
+    background-color: #ebead1;
+    padding-top: 3rem;
+    height: 620px;
+    position: relative;
+}
+#header > div {
+    width: 960px;
+    margin: auto;
+    display: flex;
+}
+#header > div > div:first-child {
+    position: relative;
+}
+#header > div > div:first-child a {
+    font-size: 0;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(images/play-button.png);
+    position: absolute;
+    top: 47%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+#header > div > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+#header > div > div:last-child > a:first-child {
+    margin-top: -2rem;
+}
+#header > div > div:last-child > p {
+    color: #5a3f05;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+}
+#header > div > div:last-child > a:nth-of-type(2) {
+    display: block;
+    margin-top: 1rem;
+    height: 71px;
+    width: 197px;
+    background: url(images/interface.png) no-repeat;
+    background-position: 0 61%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+#header > div > div:last-child > a:last-child {
+    display: block;
+    margin-top: 1rem;
+    height: 62px;
+    width: 162px;
+    background: url(images/interface.png) no-repeat;
+    background-position: 0 31%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding-right: 1.5rem;
+}
+#header > div > div:last-child > a:last-child span {
+    font-size: 12px;
+    padding-right: 5px;
+}
+#header ul {
+    width: 935px;
+    margin: auto;
+    background-color: white;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+#header ul li {
+    border-bottom: 1px solid #96ccfa;
+    flex: 1;
+    text-align: center;
+    padding: 25px 0;
+}
+#header ul li:first-child {
+    background: url(images/interface.png) no-repeat;
+    background-position: 10px 15%;
+}
+#header ul li:first-child a {
+    color: #213198;
+}
+#header ul li a {
+    color: #96ccfa;
+    font-size: 20px;
+    font-weight: bold;
+}
+#body {
+    width: 960px;
+    margin: auto;
+    background: url(images/bg-content.png) no-repeat;
+}
+#body > div {
+    width: 935px;
+    margin: auto;
+    padding: 3rem 2rem;
+    background-color: white;
+}
+#body > div #home {
+    display: flex;
+    justify-content: space-between;
+}
+#body > div #home .aside {
+    width: 72%;
+}
+#body > div #home .aside h1 {
+    color: #ea5959;
+    padding-bottom: 1rem;
+}
+#body > div #home .aside p {
+    font-size: 15px;
+}
+#body > div #home .aside p:last-of-type {
+    margin-top: 2rem;
+}
+#body > div #home .aside > a {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #fabb4f;
+}
+#body > div #home .aside > a:hover {
+    color: #ffd895;
+}
+#body > div #home .sidebar {
+    width: 25%;
+}
+#body > div #home .sidebar > div {
+    background-color: #e3eff4;
+    padding: 0.5rem 0;
+    display: grid;
+    grid-template-areas:
+        "title title title"
+        "link-1 link-2 link-3";
+    row-gap: 1rem;
+}
+#body > div h2 {
+    grid-area: title;
+    padding: 0.5rem 0;
+    background: url(images/interface.png) no-repeat;
+    background-position: 0 90%;
+    margin-left: -11px;
+    padding-left: 1rem;
+    color: white;
+}
+#body > div #home .sidebar > div > a {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    justify-self: center;
+    background: url(images/icons.png) no-repeat;
+}
+#body > div #home .sidebar > div > a:nth-of-type(1) {
+    grid-area: link-1;
+    background-position: 0 4px;
+}
+#body > div #home .sidebar > div > a:nth-of-type(2) {
+    grid-area: link-2;
+    background-position: 3px 50%;
+}
+#body > div #home .sidebar > div > a:nth-of-type(3) {
+    grid-area: link-3;
+    background-position: 3px 105%;
+}
+#body > div #home .sidebar > img {
+    margin-top: 1rem;
+}
+#body > div #home .aside p {
+    line-height: 1.5;
+    color: grey;
+}
+#body > div .section {
+    background-color: #e3eff4;
+}
+#body > div .section > div > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+#body > div .section > div .gallery {
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+}
+#body > div .section > div .paging { 
+    width: 21.5%;
+}
+#body > div .section > div .paging > a {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #b4cdd7;
+    color: white;
+}
+#body > div .section > div .paging > a:hover {
+    background-color: rgb(255, 206, 116);
+}
+#body > div .section > div .paging > div {
+    padding: 0.5rem 0;
+    display: flex;
+}
+#body > div .section > div .paging > div a {
+    color: #2975ba;
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+#body > div .section > div .paging > div > a {
+    border-right: 2px solid #2975ba;
+}
+#body > div .section > div .paging > div ul {
+    display: flex;
+}
+#body > div .section > div .paging > div ul li:first-of-type {
+    padding-left: 0.5rem;
+}
+#body > div .section > div .paging > div ul li a {
+    padding: 0 0.25rem;
+}
+#footer {
+    width: 960px;
+    margin: 2rem auto;
+    background-color: #152060;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #344db9;
+}
+#footer a {
+    color: #344db9;
+}
+#footer a:hover {
+    color: #8a9ef6;
+}
+#footer > ul {
+    display: flex;
+    padding: 1.25rem 0;
+}
+#footer > ul li {
+    padding: 0 1rem;
+    border-right: 1px solid #344db9;
+}
+#footer > ul li:last-of-type {
+    border: none;
+}
+#footer > p {
+    margin-right: 1rem;
+}
+.gallery li a img:hover {
+    opacity: 70%;
+}

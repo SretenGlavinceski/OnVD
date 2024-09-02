@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 15px;
+}
+#container {
+    width: 663px;
+    margin: auto;
+    background: url(containerbackground.gif);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "intro intro"
+        "supportingText linkList";
+}
+#intro {
+    grid-area: intro;
+    width: 605px;
+    min-height: 332px;
+    background: url(top.gif) no-repeat;
+    margin: auto;
+    padding-top: 300px;
+    display: grid;
+    grid-template-columns: 389px 192px;
+    grid-template-rows: 46px auto;
+    grid-template-areas:
+        "left-side info"
+        "left-side summary";
+}
+#preamble {
+    grid-area: left-side;
+    margin: 1rem 0 0 8px;
+}
+#preamble h3 span {
+    font-size: 0;
+    display: inline-block;
+    width: 389px;
+    height: 46px;
+    background: url(title1.gif);
+}
+#pageHeader h1 span {
+    display: inline-block;
+    font-size: 0;
+    grid-area: info;
+    width: 192px;
+    height: 46px;
+    background: url(summary.gif);
+    margin: 2rem 0 0 1rem;
+}
+#quickSummary {
+    grid-area: summary;
+    margin: 2rem 0 0 1rem;
+}
+#container .p1 {
+    padding: 1rem;
+    line-height: 1.5;
+}
+#supportingText {
+    grid-area: supportingText;
+    width: 389px;
+    margin-left: 35px;
+}
+#supportingText #explanation h3 span {
+    font-size: 0;
+    display: inline-block;
+    width: 389px;
+    height: 46px;
+    background: url(title2.gif);
+    vertical-align: top;
+}
+#participation h3 span {
+    font-size: 0;
+    display: inline-block;
+    width: 389px;
+    height: 46px;
+    background: url(title3.gif);
+    vertical-align: top;
+}
+#participation ul {
+    margin-left: 2.5rem;
+}
+#participation ul li a {
+    display: inline-block;
+    padding: 0.25rem;
+    text-decoration: none;
+    color: red;
+}
+#linkList {
+    grid-area: linkList;
+    margin: -10rem 30px 0 0;
+}
+#lselect h3.select span {
+    display: inline-block;
+    font-size: 0;
+    width: 192px;
+    height: 46px;
+    background: url(designs.gif);
+    margin-bottom: 1rem;
+    margin-left: 11px;
+}
+#lresources h3.resources span {
+    display: inline-block;
+    font-size: 0;
+    width: 192px;
+    height: 46px;
+    background: url(designs.gif);
+    margin-bottom: 1rem;
+    margin-left: 11px;
+}
+#linkList ul {
+    list-style-type: none;
+}
+#linkList ul li {
+    padding: 0 0.5rem 0.5rem 2.5rem;
+}
+#lselect ul li {
+    background: url(paperfolded.gif) no-repeat;
+    background-position: 1rem 3px;
+}
+#lresources li {
+    background: url(paper.gif) no-repeat;
+    background-position: 1rem 3px;
+}
+#lresources li a {
+    text-decoration: none;
+    color: red;
+}
+#extraDiv1:before {
+    display: inline-block;
+    content: "Animation?";
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 3%;
+    left: 52.5%;
+}

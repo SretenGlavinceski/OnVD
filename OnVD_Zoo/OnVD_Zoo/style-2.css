@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+        background: url(images/bg-body.gif);
+}
+#page {
+    width: 960px;
+    background: url(images/bg-page.gif) no-repeat;
+    margin: auto;
+}
+#header {
+    display: grid;
+    grid-template-columns: 364px 298px 298px;
+    grid-template-areas: 
+        "left-title nav-bar nav-bar"
+        "left-title big-img big-img"
+        "left-ul big-img big-img"
+        "buy-menu big-img big-img"
+        "bottom-bar bottom-bar bottom-bar";
+}
+#header > a:nth-of-type(1) {
+    grid-area: left-title;
+    z-index: 2;
+}
+#header > a:nth-of-type(2) {
+    grid-area: buy-menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 310px;
+    height: 60px;
+    background: url(images/interface.gif) no-repeat;
+    background-position: 0 104%;
+    color: white;
+    font-weight: bold;
+}
+#header > ul:nth-of-type(1) {
+    grid-area: left-ul;
+    margin: 1rem 0 1.5rem 1.5rem;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px dotted darkred;
+    border-bottom: 2px dotted darkred;
+}
+#header > ul:nth-of-type(1) li {
+    padding: 0 0.75rem;
+    border-right: 2px dotted darkred;
+}
+#header > ul:nth-of-type(1) li a, #header > ul:nth-of-type(1) li span {
+    color: darkred;
+}
+#header > ul:nth-of-type(1) li:last-of-type {
+    border: none;
+}
+#header > ul:nth-of-type(2) {
+    grid-area: nav-bar;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.1rem 0.5rem 0 0;
+}
+#header > ul:nth-of-type(2) li a {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+#header > ul:nth-of-type(2) li:first-of-type a {
+    padding: 15px 18px;
+    background: url(images/navigation.gif) no-repeat;
+    background-position: 0 0;
+    color: rgb(90, 23, 23);
+}
+#header > div:nth-of-type(1) {
+    grid-area: big-img;
+    background: url(images/lion-family.jpg) no-repeat;
+    z-index: 1;
+    position: relative;
+    top: 0.5rem;
+    left: -1.1rem;
+}
+#header > div:nth-of-type(2) {
+    grid-area: bottom-bar;
+    margin-top: 0.25rem;
+    padding: 1rem 13rem 1rem 3rem;
+    background: url(images/interface.gif) no-repeat;
+    background-position: 20px 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header > div:nth-of-type(2) h1 {
+    color: goldenrod;
+}
+#header > div:nth-of-type(2) p {
+    color: white;
+    font-size: 18px;
+}
+#header > div:nth-of-type(2) p a {
+    color: white;
+    font-weight: bold;
+}
+#content {
+    display: grid;
+    grid-template-columns: 27% 51% 20%;
+    grid-template-areas:
+        "featured featured featured"
+        "section1 section2 section3"
+        "section1 section2 section3";
+    column-gap: 1%;
+}
+#featured {
+    grid-area: featured;
+    height: 193px;
+    margin: 0.25rem 0 0.5rem 0;
+    padding: 1rem 2rem;
+    background: url(images/interface.gif) no-repeat;
+}
+#featured > h2 {
+    color: darkred;
+}
+#featured > ul {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+#featured > ul li {
+    width: 98px;
+    height: 120px;
+}
+#featured > ul li > a:first-of-type {
+    display: inline-block;
+    width: 98px;
+    height: 98px;
+}
+#featured > ul li > a:last-of-type {
+    display: block;
+    text-align: center;
+    padding-top: 0.25rem;
+    color: rgb(90, 23, 23);
+}
+#featured > ul li:nth-of-type(1) > a:first-of-type {
+    background: url(images/penguin.jpg);
+}
+#featured > ul li:nth-of-type(2) > a:first-of-type {
+    background: url(images/elephant.jpg);
+}
+#featured > ul li:nth-of-type(3) > a:first-of-type {
+    background: url(images/owl.jpg);
+}
+#featured > ul li:nth-of-type(4) > a:first-of-type {
+    background: url(images/butterfly.jpg);
+}
+#featured > ul li:nth-of-type(5) > a:first-of-type {
+    background: url(images/turtle.jpg);
+}
+#featured > ul li:nth-of-type(6) > a:first-of-type {
+    background: url(images/snake.jpg);
+}
+#featured > ul li:nth-of-type(7) > a:first-of-type {
+    background: url(images/gorilla.jpg);
+}
+#featured > ul li:nth-of-type(8) > a:first-of-type {
+    background: url(images/button-view-gallery.jpg);
+}
+#content p {
+    color: rgb(90, 23, 23);
+    line-height: 1.5;
+    font-size: 15px;
+}
+#content .section1 h2, #content .section2 h2, #content .section3 h2 {
+    color: darkred;
+    margin-bottom: 0.5rem;
+}
+#content .section1 {
+    grid-area: section1;
+    padding-left: 2rem;
+}
+#content .section1 ul li {
+    padding: 0.5rem 0;
+    border-bottom: 2px dotted rgb(90, 23, 23);
+}
+#content .section1 ul li:first-of-type {
+    padding-top: 0;
+}
+#content .section1 ul li:last-of-type {
+    border: none;
+}
+#content .section1 ul li > a {
+    color: darkred;
+    font-weight: bold;
+}
+#content .section1 ul li > p a {
+    color: rgb(90, 23, 23);
+    text-decoration: underline;
+}
+#content .section2 {
+    margin-left: 0.5rem;
+    grid-area: section2;
+}
+#content .section2 > p {
+    width: 65%;
+    text-align: justify;
+    font-weight: bold;
+    line-height: normal;
+}
+#content .section2 > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.5rem;
+    width: 208px;
+    height: 139px;
+    background: url(images/dolphins.jpg) no-repeat;
+}
+#content .section2 > ul {
+    list-style-type: disc;
+    display: inline-block;
+    width: 48%;
+    line-height: normal;
+    margin: 0 0 0.15rem 1.5rem;
+}
+#content .section2 > ul li p {
+    font-size: 14px;
+}
+#content .section2 > ul li p a {
+    color: rgb(90, 23, 23);
+    text-decoration: underline;
+}
+#content .section2 > #section1 {
+    margin-top: 0.75rem;
+    display: inline-block;
+    width: 60%;
+}
+#content .section2 > #section1 ul li {
+    padding-bottom: 0.5rem;
+    display: grid;
+    grid-template-areas:
+        "img-2 title-3"
+        "img-2 par-3";
+}
+#content .section2 > #section1 ul li > a {
+    grid-area: img-2;
+}
+#content .section2 > #section1 ul li > h4 {
+    grid-area: title-3;
+    margin-left: 0.5rem;
+    line-height: normal
+}
+#content .section2 > #section1 ul li > p {
+    grid-area: par-3;
+    margin-left: 0.5rem;
+    line-height: normal
+}
+#content .section2 > #section2 {
+    margin-top: 0.75rem;
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+}
+#content .section2 > #section1 h4 a, #content .section2 > #section2 h4 a {
+    color: rgb(90, 23, 23);
+}
+#content .section2 > #section2 p a {
+    color: rgb(90, 23, 23);
+    text-decoration: underline;
+}
+#content .section3 {
+    grid-area: section3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+#content .section3 > a {
+    color: rgb(90, 23, 23);
+    padding: 0.25rem 2rem;
+    background: url(images/icons.gif) no-repeat;
+}
+#content .section3 > a:nth-of-type(1) {
+    background-position: 0 7px;
+}
+#content .section3 > a:nth-of-type(2) {
+    background-position: 0 45%;
+}
+#content .section3 > a:nth-of-type(3) {
+    background-position: 0 115%;
+}
+#content .section3 > form {
+    margin: 0.5rem 0;
+    color: darkred;
+}
+#content .section3 > form  h3 {
+    font-weight: normal;
+}
+#content .section3 > form input {
+    border: none;
+    padding: 10px 0;
+    text-indent: 1rem;
+}
+#content .section3 > img {
+    position: relative;
+    right: 10px;
+    top: 1.55rem;
+}
+#footer > div {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas:
+        "logo info-div navigation info-ul"
+        "copyright copyright copyright copyright";
+}
+#footer > div > a {
+    display: inline-block;
+    width: 203px;
+    height: 178px;
+    background: url(images/animal-kingdom.jpg);
+}
+#footer > div > div {
+    color: rgb(90, 23, 23);
+    align-self: center;
+    line-height: 1.5;
+}
+#footer > div > ul:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(3, 30px);
+    justify-content: center;
+    align-content: center;
+}
+#footer > div > ul:nth-of-type(1) li {
+    text-align: center;
+}
+#footer > div > ul:nth-of-type(1) li a {
+    color: rgb(90, 23, 23);
+    font-size: 17px;
+}
+#footer > div > ul:nth-of-type(2) {
+    margin: 2.5rem 0 0 1rem;
+}
+#footer > div > ul:nth-of-type(2) li {
+    padding: 5px 0;
+}
+#footer > div > ul:nth-of-type(2) li a {
+    color: rgb(90, 23, 23);
+}
+#footer > div > p {
+    text-align: center;
+    margin-top: 2rem;
+    grid-area: copyright;
+    color: rgb(90, 23, 23);
+}
+.finkiExtra {
+    width: 100%;
+    height: 247px;
+    background: url(images/bg-footer.gif);
+    position: absolute;
+    top: 183%;
+    z-index: -1;
+}
+#featured ul li a:first-child:hover {
+    opacity: 70%;
+}
+#header #navigation li a:hover {
+    color: goldenrod;
+}
+#header #navigation li:first-child a:hover {
+    background: none;
+    color: white;
+}

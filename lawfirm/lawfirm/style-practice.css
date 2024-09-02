@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+body {
+	background-color: #e2e2e2;
+}
+#header {
+    height: 141px;
+    background: url(images/bg-header.jpg);
+}
+.clearfix {
+    width: 960px;
+    margin: 0 auto;
+}
+#header .clearfix {
+    height: 70%;
+    display: flex;
+    align-items: end;
+}
+#header .clearfix .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 1rem 2rem;
+    width: 100%;
+}
+#header .clearfix .navigation li a {
+	color: #96a887fd;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+#header .clearfix .navigation li:first-child a {
+    color: #eaf0e4fd;
+}
+#header .clearfix .navigation li a:hover {
+	color: #eaf0e4fd;
+}
+#header .clearfix .navigation li:nth-child(5) > div {
+    display: none;
+}
+#adbox {
+    padding-top: 1rem;
+    background: url(images/bg-adbox.png) no-repeat center bottom;
+}
+#adbox .clearfix {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e9e9e9;
+    border: 1px solid white;
+}
+#adbox .clearfix img {
+    order: 2;
+}
+#adbox .clearfix .detail {
+    flex: 1;
+    order: 1;
+    text-align: center;
+    padding: 7rem 0 0 2rem;
+}
+#adbox .clearfix .detail h1 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#adbox .clearfix .detail h1, #adbox .clearfix .detail p {
+    font-size: 22px;
+    color: darkolivegreen;
+    font-weight: normal;
+}
+.highlight {
+    border-top: 1px solid white;
+    border-bottom: 2px solid white;
+    background: #eee url(../images/bg-highlight.jpg) repeat-x left bottom;
+}
+.highlight .clearfix {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: "title testim" "paragraph testim";
+}
+.highlight .clearfix h1, .highlight .clearfix p, .highlight .clearfix span, .highlight .clearfix h2, .highlight .clearfix a {
+    color: rgb(80, 79, 79);
+}
+.highlight .clearfix p {
+    line-height: 1.5;
+}
+.highlight .clearfix > h1, .highlight .clearfix h2 {
+    grid-area: title;
+    padding: 1rem 0 1.5rem 0;
+    font-weight: normal;
+}
+.highlight .clearfix h2 {
+    margin-top: 0.75rem;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.highlight .clearfix > p {
+    grid-area: paragraph;
+    padding-bottom: 5rem;
+}
+.highlight .clearfix > .testimonial {
+    border-left: 1px solid lightgrey;
+    grid-area: testim;
+    padding-left: 1rem;
+}
+.highlight .clearfix > .testimonial span {
+    display: block;
+    margin-top: 3rem;
+    text-align: end;
+    padding-bottom: 2rem;
+}
+.featured {
+    border-bottom: 2px solid white;
+    padding: 2rem 0 3rem 0;
+}
+.featured h2, .featured p, .featured p b, .featured a {
+    color: rgb(78, 78, 78);
+}
+.featured > h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0 0 2rem 14.25%;
+}
+.featured > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.featured > ul li {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featured > ul li .frame1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 155px;
+    background: url(images/frames.png) no-repeat;
+	background-position: -116px 0;
+}
+.featured > ul li > p > b {
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 0.75rem 0 0.5rem 0;
+}
+.featured > ul li > p {
+    padding-left: 0.5rem;
+    line-height: 1.5;
+    width: 95%;
+}
+.featured > ul li > a {
+    margin: 0.5rem 0 0 0.5rem;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background: url(images/interface.png) no-repeat -106px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+}
+.featured > ul li > a:hover {
+    background-position: 1px 0;
+}
+#footer > .clearfix {
+    background: url(images/bg-footer.png) no-repeat top center;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3%;
+}
+#footer h4, #footer p, #footer span, #footer a {
+    color: rgb(80, 78, 78);
+}
+#footer > .clearfix > div {
+    width: 31%;
+    padding: 2rem 0;
+}
+#footer > .clearfix > div:not(#footer .clearfix > div:last-of-type) {
+    border-right: 2px solid lightgrey;
+    padding-right: 2rem;
+}
+#footer > .clearfix > div > h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+#footer > .clearfix > div > p {
+    line-height: 1.5;
+}
+#footer > .clearfix > div:last-child > a {
+    display: inline-block;
+    width: 215px;
+    height: 40px;
+    background: url(images/interface.png) no-repeat 57.25% 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 0.5rem;
+}
+#footer > .clearfix > div:last-child > a:hover {
+    background-position: 0 19%;
+}
+#footnote {
+    height: 43px;
+    background: url(images/bg-footnote.jpg);
+    margin-bottom: 2rem;
+}
+#footnote .clearfix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footnote p {
+	color: #96a887fd;
+    margin-top: 0.5rem;
+}
+#footnote .connect {
+    margin-top: 0.5rem;
+}
+#footnote .connect > a {
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    background: url(images/icons.png) no-repeat;
+    margin-right: 5px;
+}
+#footnote .connect > a:nth-of-type(1)  {
+    background-position: 0 57%;
+}
+#footnote .connect > a:nth-of-type(2) {
+    background-position: 0 71%;
+}
+#footnote .connect > a:nth-of-type(3) {
+    background-position: 0 85%;
+}
+#footnote .connect > a:nth-of-type(4) {
+    background-position: 0 100%;
+}

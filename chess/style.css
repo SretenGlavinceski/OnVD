@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, "lucida sans", Arial, Sans-Serif;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+#topbar {
+    width: 100%;
+    height: 200px;
+    background: url(images/bg.jpg);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#topbarleft {
+    width: 300px;
+    height: 200px;
+    background: url(images/logo.jpg);
+}
+
+#topbarright ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#topbarright ul li {
+    padding: 10px 15px;
+}
+
+#topbarright ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#topbar h1 {
+    margin-top: 7px;
+    color: #f48129;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#topbar h2 em {
+    color: white;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+#topbar h2 {
+    margin-top: 10px;
+}
+
+#content {
+    width: 60%;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5%;
+}
+
+#contentleft {
+    width: 60%;
+}
+
+#right_sidebar {
+    width: 30%;
+}
+
+#contentleft h1 {
+    color: #666666;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #666666;
+    font-size: 31px;
+}
+
+.small {
+    margin: 5px 0 10px 0;
+    color: darkred;
+}
+
+blockquote {
+    padding: 20px 50px;
+    color: #b59d35;
+    font-weight: bold;
+}
+
+blockquote a {
+    color: #ff7a2f;
+    text-decoration: none;
+}
+
+#contentleft p {
+    line-height: 1.75;
+}
+
+#contentleft p:nth-of-type(3) a{
+    text-decoration: none;
+    color: #ff7a2f;
+}
+
+#contentleft p:nth-of-type(3), #contentleft p:last-of-type {
+    margin: 10px 0 30px 0;
+}
+
+#contentleft p:last-of-type a{
+    text-decoration: none;
+    color: #ff7a2f;
+}
+
+#contentleft p:nth-of-type(5) a {
+    color: #ff7a2f;
+    text-decoration: none;
+}
+
+#right_sidebar ul {
+    list-style-type: none;
+}
+
+#About h2, #Visit h2, #Articles h2, #Archives h2 {
+    color: #666666;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #666666;
+    margin-bottom: 5px;
+    font-size: 31px;
+}
+
+#About, #Visit, #Articles, #Archives {
+    margin-bottom: 25px;
+}
+
+#Visit ul li{
+    padding: 8px 0;
+    border-bottom: 1px solid #666666;
+}
+
+#Visit ul li:nth-of-type(1){
+    padding: 0 0 8px 0;
+}
+
+#Visit ul li a {
+    text-decoration: none;
+    color: darkred;
+}
+
+#Articles ul li{
+    padding: 8px 0;
+    border-bottom: 1px solid #666666;
+}
+
+#Articles ul li:nth-of-type(1){
+    padding: 0 0 8px 0;
+}
+
+#Articles ul li a {
+    text-decoration: none;
+    color: darkred;
+}
+
+#Archives ul li{
+    padding: 8px 0;
+    border-bottom: 1px solid #666666;
+}
+
+#Archives ul li:nth-of-type(1){
+    padding: 0 0 8px 0;
+}
+
+#Archives ul li a {
+    text-decoration: none;
+    color: darkred;
+}
+
+#footerbg{
+    width: 100%;
+    height: 230px;
+    border-top: 7px solid #ff7a2f;
+    background-color: #000;
+    display: flex; 
+    justify-content: center;
+}
+
+#footer {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    column-gap: 3%;
+    margin-top: 15px;
+}
+
+#footer div:last-child {
+    display: none;
+}
+
+#footer div {
+    width: 280px;
+}
+
+#footer h2 {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+#footer ul {
+    list-style-type: none;
+}
+
+#footer ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #666666;
+}
+
+#footer ul li:nth-of-type(1) {
+    padding: 10px 0;
+    border-top: 1px solid #666666;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+#credits {
+    background-color: #000;
+    padding: 10px 0;
+}
+
+#credits p {
+    color: white;
+}
+
+#credits p a {
+    text-decoration: none;
+    color: #ff7a2f;
+}
+
+#topbarright ul li a:hover {
+    color: #646966;
+    text-decoration: underline;
+}
+
+#right_sidebar ul #Visit ul li:hover {
+    background-color: #f0ded2;
+}
+
+#right_sidebar ul #Visit ul li:hover a {
+    color: #da9974;
+}
+
+#right_sidebar ul #Articles ul li:hover {
+    background-color: #f0ded2;
+}
+
+#right_sidebar ul #Articles ul li:hover a {
+    color: #da9974;
+}
+
+#right_sidebar ul #Archives ul li:hover {
+    background-color: #f0ded2;
+}
+
+#right_sidebar ul #Archives ul li:hover a {
+    color: #da9974;
+}
+
+#footerleft ul li:hover {
+    background-color: #444444;
+}
+
+#footerleft ul li:hover a {
+    color: #c0bfd0;
+}
+
+#footermiddle ul li:hover {
+    background-color: #444444;
+}
+
+#footermiddle ul li:hover a {
+    color: #c0bfd0;
+}
+#footerright ul li:hover {
+    background-color: #444444;
+}
+
+#footerright ul li:hover a {
+    color: #c0bfd0;
+}
+
+@media (max-width:425px ) {
+    #content {
+        flex-direction: column;
+    }
+}
